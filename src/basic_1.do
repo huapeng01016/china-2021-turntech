@@ -27,3 +27,5 @@ table (维修记录78 国籍) (), nototals
 table () (国籍 维修记录78), nototals
 
 table () (维修记录78 国籍), nototals
+
+table (国籍 维修记录78 价格区间) (), nototals
