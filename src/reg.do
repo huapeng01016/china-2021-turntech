@@ -39,11 +39,16 @@ table () (command result),                                   ///
          
 collect label list result, all 
 
-collect label levels result _r_b "Odds Ratio", modify  
+collect label levels result _r_b "优势比", modify	// Odds ratio
+collect label levels result _r_se "标准误差", modify	
+collect label levels result _r_z "Z分数", modify	
+collect label levels result _r_p "P值", modify	
+collect label levels result _r_ci "95$置信区间", modify	
+  
 collect preview      
 
 // CHANGE THE LABEL FOR command TO  'Model Results'         
-collect label levels command 1 "Logistic Regression Model for Cars", modify
+collect label levels command 1 "车俩数据逻辑回归模型", modify
 collect preview
 
 // REMOVE THE FACTOR VARIABLE BASE LEVELS
