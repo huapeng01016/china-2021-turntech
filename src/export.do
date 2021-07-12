@@ -22,5 +22,4 @@ collect preview
 
 **# export to files
 collect export "$base_dir/output/basic_1.html", as(html) replace
-collect export "$base_dir/output/basic_1.pdf", as(pdf) replace
 collect export "$base_dir/output/basic_1.docx", as(docx) replace
