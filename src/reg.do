@@ -5,7 +5,7 @@
 
 cscript
 
-global base_dir "C:/stata/talks/china-2021-turntech"
+global base_dir "C:/talks/china-2021-turntech"
 
 use $base_dir/data/auto_zh.dta, clear
 
