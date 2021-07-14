@@ -1,8 +1,6 @@
 cscript
 
-global base_dir "C:/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 **# include statistics other than frequency  
 table () (价格区间),           ///

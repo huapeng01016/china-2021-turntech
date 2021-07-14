@@ -1,8 +1,6 @@
 cscript
 
-global base_dir "C:/stata/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 table (国籍) (价格区间),          ///
       statistic(frequency)      ///
@@ -21,5 +19,5 @@ collect dims
 collect preview
 
 **# export to files
-collect export "$base_dir/output/basic_1.html", as(html) replace
-collect export "$base_dir/output/basic_1.docx", as(docx) replace
+collect export basic_1.html, as(html) replace
+collect export basic_1.docx, as(docx) replace

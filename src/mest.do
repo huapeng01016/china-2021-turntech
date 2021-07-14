@@ -5,9 +5,7 @@
 
 cscript
 
-global base_dir "C:/stata/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 gen 价格指标 = cond( 价格 > 9000, 1, 0)
 label define 价格指标 1 "豪华" 0 "非豪华" 
@@ -87,5 +85,5 @@ collect style cell result[AIC BIC], nformat(%8.0f)
 collect preview
 		 
 **# export to files
-collect export "$base_dir/output/est_2.html", as(html) replace
-collect export "$base_dir/output/est_2.docx", as(docx) replace
+collect export est_2.html, as(html) replace
+collect export est_2.docx, as(docx) replace

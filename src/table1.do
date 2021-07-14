@@ -1,8 +1,6 @@
 cscript
 
-global base_dir "C:/stata/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 **# classic table 1
 table (var) (维修记录78),              ///
@@ -99,5 +97,5 @@ collect preview
 
 
 **# export to files
-collect export "$base_dir/output/table1.html", as(html) replace
-collect export "$base_dir/output/table1.docx", as(docx) replace
+collect export table1.html, as(html) replace
+collect export table1.docx, as(docx) replace

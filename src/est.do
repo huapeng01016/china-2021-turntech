@@ -5,9 +5,7 @@
 
 cscript
 
-global base_dir "C:/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 gen 价格指标 = cond( 价格 > 9000, 1, 0)
 label define 价格指标 1 "豪华" 0 "非豪华" 
@@ -16,7 +14,7 @@ gen  维修指标 = cond(维修记录78 < 2, 1, 0) if 维修记录78 < .
 label define 维修指标 1 "质量良好" 0 "质量一般" 
 label value 维修指标 维修指标
 
-**# estimation  
+**# logit  
 logistic 国籍 c.油耗##i.价格指标 i.维修指标
 
 collect clear
@@ -47,18 +45,18 @@ collect label levels result _r_ci "95$置信区间", modify
   
 collect preview      
 
-// CHANGE THE LABEL FOR command TO  'Model Results'         
+**# chnage label for command
 collect label levels command 1 "车俩数据逻辑回归模型", modify
 collect preview
 
-// REMOVE THE FACTOR VARIABLE BASE LEVELS
+**# remove factor variable base levels
 collect style showbase off
 collect preview
 
-// STACK THE ROW HEADERS AND CHANGE THE INTERACTION DELIMITER
+**# stack row header and change delimiter
 collect style row stack, delimiter(" x ") nobinder
 collect preview
  
 **# export to files
-collect export "$base_dir/output/est_1.html", as(html) replace
-collect export "$base_dir/output/est_1.docx", as(docx) replace
+collect export est_1.html, as(html) replace
+collect export est_1.docx, as(docx) replace

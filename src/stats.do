@@ -5,9 +5,7 @@
 
 cscript
 
-global base_dir "C:/stata/talks/china-2021-turntech"
-
-use $base_dir/data/auto_zh.dta, clear
+use auto_zh.dta, clear
 
 
 **# classical hypothesis tests 
@@ -40,7 +38,6 @@ collect style cell border_block, border(right, pattern(nil))
 collect preview
 
 
-// EXAMPLE OF AN EVEN LARGER TABLE 
 **# a larger example
 local myresults "国内 = r(mu_1) 国外 = r(mu_2) 差异 = (r(mu_2)-r(mu_1)) P值 = r(p)"
 
@@ -82,5 +79,5 @@ collect style cell border_block, border(right, pattern(nil))
 collect preview  
  
 **# export to files
-collect export "$base_dir/output/stats.html", as(html) replace
-collect export "$base_dir/output/stats.docx", as(docx) replace
+collect export stats.html, as(html) replace
+collect export stats.docx, as(docx) replace
