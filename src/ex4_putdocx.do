@@ -1,3 +1,5 @@
+version 17
+
 cscript
 
 use auto_zh.dta, clear
@@ -57,4 +59,4 @@ putdocx table tbl_summ = matrix(stats),  ///
         border(insideH, nil)             ///
         border(end, nil)
 
-putdocx save exp_1.docx, replace
+putdocx save oex4.docx, replace

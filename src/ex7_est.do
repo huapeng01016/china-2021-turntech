@@ -58,5 +58,5 @@ collect style row stack, delimiter(" x ") nobinder
 collect preview
  
 **# export to files
-collect export est_1.html, as(html) replace
-collect export est_1.docx, as(docx) replace
+collect export oex7.html, as(html) replace
+collect export oex7.docx, as(docx) replace

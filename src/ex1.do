@@ -1,3 +1,5 @@
+version 17
+
 cscript
 
 use auto_zh.dta, clear

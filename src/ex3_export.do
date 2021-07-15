@@ -1,3 +1,5 @@
+version 17
+
 cscript
 
 use auto_zh.dta, clear
@@ -20,6 +22,6 @@ collect label list result, all
 collect preview
 
 **# export to files
-collect export basic_1.html, as(html) replace
-collect export basic_1.docx, as(docx) replace
-collect export basic_1.xlsx, as(xlsx) replace
+collect export oex3.html, as(html) replace
+collect export oex3.docx, as(docx) replace
+collect export oex3.xlsx, as(xlsx) replace

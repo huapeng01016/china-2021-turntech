@@ -3,6 +3,7 @@
        , command(command)
 */
 
+version 17
 cscript
 
 use auto_zh.dta, clear
@@ -79,5 +80,5 @@ collect style cell border_block, border(right, pattern(nil))
 collect preview  
  
 **# export to files
-collect export stats.html, as(html) replace
-collect export stats.docx, as(docx) replace
+collect export oex6.html, as(html) replace
+collect export oex6.docx, as(docx) replace

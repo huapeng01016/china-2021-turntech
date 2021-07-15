@@ -1,7 +1,4 @@
-/*
-	table (row dimensions) (column dimensions)
-       , command(command)
-*/
+version 17
 
 cscript
 
@@ -85,5 +82,5 @@ collect style cell result[AIC BIC], nformat(%8.0f)
 collect preview
 		 
 **# export to files
-collect export est_2.html, as(html) replace
-collect export est_2.docx, as(docx) replace
+collect export oex8.html, as(html) replace
+collect export oex8.docx, as(docx) replace

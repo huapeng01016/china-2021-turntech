@@ -1,3 +1,5 @@
+version 17
+
 cscript
 
 use auto_zh.dta, clear
@@ -8,7 +10,7 @@ table (var) (维修记录78),              ///
       statistic(fvpercent 国籍)     ///
       statistic(mean 价格)          ///
       statistic(sd 价格) nototals
-
+	  
 **# change label	  
 collect label dim 维修记录78 "1978年维修记录", modify
 collect preview
@@ -97,5 +99,5 @@ collect preview
 
 
 **# export to files
-collect export table1.html, as(html) replace
-collect export table1.docx, as(docx) replace
+collect export oex5.html, as(html) replace
+collect export oex5.docx, as(docx) replace
