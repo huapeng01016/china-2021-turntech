@@ -15,9 +15,11 @@ table (国籍) (价格区间),          ///
 
 **# collect
 collect dims 
-
+collect levelsof result
+collect label list result, all
 collect preview
 
 **# export to files
 collect export basic_1.html, as(html) replace
 collect export basic_1.docx, as(docx) replace
+collect export basic_1.xlsx, as(xlsx) replace
