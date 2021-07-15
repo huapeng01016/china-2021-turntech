@@ -82,3 +82,7 @@ collect preview
 **# export to files
 collect export oex6.html, as(html) replace
 collect export oex6.docx, as(docx) replace
+
+collect layout (command) (result[国内 国外 差异])
+collect stars  P值 0.01 "***" 0.05 "** " 0.1 "* " 1 " ", attach(国内 国外 差异)
+collect preview  
