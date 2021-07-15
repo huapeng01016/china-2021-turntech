@@ -1,5 +1,18 @@
 version 17
 
+/*
+	collect dims
+	collect levelsof 
+	collect label
+	collect label list
+	collect preview
+	collect label levels
+	
+	collect recode
+	collect layout
+	collect style
+*/
+
 cscript
 
 use auto_zh.dta, clear

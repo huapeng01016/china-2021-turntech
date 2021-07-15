@@ -1,5 +1,16 @@
 version 17
 
+/*
+	collect dims
+	collect levelsof 
+	collect label
+	collect label list
+	collect preview
+
+	collect label levels 
+	putdocx collect
+*/
+
 cscript
 
 use auto_zh.dta, clear

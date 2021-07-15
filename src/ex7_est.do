@@ -1,6 +1,17 @@
 /*
 	table (row dimensions) (column dimensions)
        , command(command)
+	
+	collect dims
+	collect levelsof 
+	collect label
+	collect label list
+	collect preview
+	collect label levels
+	collect recode
+	collect layout
+	collect style
+	collect stars	   
 */
 
 cscript

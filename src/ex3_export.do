@@ -1,5 +1,15 @@
 version 17
 
+/*
+	collect dims
+	collect levelsof 
+	collect label
+	collect label list
+	collect preview
+	
+	collect export
+*/
+
 cscript
 
 use auto_zh.dta, clear

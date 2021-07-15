@@ -1,5 +1,10 @@
 version 17
 
+/*
+	table (row variables) (column variables)
+		, statistics(stats)
+*/
+
 cscript
 
 use auto_zh.dta, clear
